@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los signos del zodíaco y su carácter</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <div class="top-bar">
+        <span><ion-icon name="call-outline"></ion-icon>+5492215436757</span>
+        <ul>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+    </div>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script src="/js/form.js"></script>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            
+            <div class="menu">
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="signoSolar.html">Signo Solar</a></li>
+                        <li><a href="about.html">Acerca de</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <article style="padding-top: 10px;">
+        
+        <form name="formulario">
+            <div class="contitulo">
+                <div class="itemA">
+                    <h1>Formulario de Contacto</h1>
+                </div>
+                <div class="animacion"></div>
+            </div>
+            <label for="nombre"><h4 class="h4Form">Nombre: </h4></label><input class="inputConfig" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre aquí..."><br>
+            <label for="apellido"><h4 class="h4Form">Apellido: </h4></label> <input class="inputConfig" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido aquí..." ><br>
+            <label for="direccion"><h4 class="h4Form">Dirección: </label> <input class="inputConfig" type="text" name="direccion" id="apellido" placeholder="Ingrese su dirección aquí..." ><br>
+            <label for="ciudad"><h4 class="h4Form">Ciudad: </h4></label> <input class="inputConfig" type="text" name="ciudad" id="ciudad" placeholder="Ingrese la ciudad donde vive..." ><br>
+            <label for="cp"><h4 class="h4Form">Código Postal: </h4></label> <input class="inputConfig"  type="text" name="cp" id="cp" placeholder="Ingrese el código postal aquí..." ><br>
+            <label for="email"><h4 class="h4Form">E-mail: </h4></label> <input class="inputConfig" type="email" id="email" name="email" placeholder="ejemplo@servidor.com" required/><br>
+            <label for="fechaHoraNac"><h4 class="h4Form">Fecha y Hora de Nacimiento: </h4></label> <input class="inputConfig" type="datetime-local" id="fechaHoraNac" name="fechaHoraNac" required/><br>
+            
+            <p>
+                <h4 class="h4Form">Género</h4>
+                <input type="radio" name="genero" id="genero" value="Hombre" checked> Hombre
+                <input type="radio" name="genero" id="genero" value="Mujer"> Mujer
+                <input type="radio" name="genero" id="genero" value="Otro"> Otro
+            </p>
+            <p>
+                <h4 class="h4Form">Temas de interés</h4>
+                <input type="checkbox" name="interes" id="interes" value="Signo solar" checked> Signo Solar
+                <input type="checkbox" name="interes" id="interes" value="Carta Natal"> Carta Natal
+                <input type="checkbox" name="interes" id="interes" value="Ascendente"> Ascendente
+            </p><br>
+            <textarea name="message" id="message">Escríbanos aquí su mensaje...</textarea><br><br>
+            <div class="loginbox">
+                <input type="submit" name="boton" value="Enviar" onclick="valida_envia()">
+            </div>
+        </form>
+
+     </article>
+                 
+    <footer>
+        <p> &copy; Linda Goodman </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  }
+
+h1, .h4Form{
+  text-shadow: 2px 2px 4px rgb(146, 146, 146);
+}
+
+footer{
+  padding: 10px;
+}
+
+footer > p{
+  text-align: center;
+  text-shadow: 2px 2px 4px rgb(146, 146, 146);
+}
+
+article{
+  padding: 30px;
+ }
+
+p {
+  margin: 10px;
+  text-align: justify;
+  text-indent: 10px;
+}
+
+.pitem{
+  color: white;
+  font-weight: bolder;
+
+}
+
+.imgFlecha {
+  float: right;
+  margin-left:15px;
+}
+
+a, a:hover{
+  text-decoration: none;
+  
+}
+
+/*Estilos de las UL*/
+.ariesUl{
+  list-style-image: url('/imagenes/aries1ico.gif');
+}
+
+.libraUl {
+  list-style-image: url('/imagenes/libra1ico.gif');
+}
+
+.escorpioUl {
+  list-style-image: url('/imagenes/escorpio1ico.gif');
+}
+
+
+/*
+Este contenedor lo creé para hacer responsivo tanto el logo animado como el h1 
+*/
+.contitulo {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contitulo2 {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 5px;
+  justify-content: left;
+  align-items: left;
+}
+
+.itemA{
+  padding: 10px;
+  
+}
+
+/*
+Este contenedor va a alojar cada uno de los divs con signos zodiacales y será responsivo
+*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: white;
+  padding: 25px;
+  justify-content: center;
+  align-content: center;
+ }
+
+.container > div {
+  text-align: center;
+  padding: 5px 0;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  border: 1px solid rgb(0, 0, 105);
+  background-size: cover;
+  height: 120px;
+  width: 160px;
+  color: white;
+  text-shadow: 2px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+  box-shadow: 8px 8px 5px rgb(146, 146, 146);
+  
+}
+
+.container > div > a{
+  text-decoration: none;
+  color: white;
+  
+}
+
+.container > div > a:hover{
+  cursor:pointer;
+  color: #ff8640;
+}
+
+.item1{
+  background: url(/imagenes/ariesbg.jpg); 
+}
+
+.item2{
+  background: url(/imagenes/taurobg.jpg);
+}
+
+.item3{
+  background: url(/imagenes/geminisbg.jpg);
+}
+
+.item4{
+  background: url(/imagenes/cancerbg.jpg);
+}
+.item5{
+  background: url(/imagenes/leobg.jpg);
+}
+.item6{
+  background: url(/imagenes/geminisbg.jpg);
+}
+.item7{
+  background: url(/imagenes/librabg.jpg);
+}
+.item8{
+  background: url(/imagenes/escorpiobg.jpg);
+}
+.item9{
+  background: url(/imagenes/sagitariobg.jpg);
+}
+.item10{
+  background: url(/imagenes/capricorniobg.jpg);
+}
+.item11{
+  background: url(/imagenes/acuariobg.jpg);
+}
+.item12{
+  background: url(/imagenes/piscisbg.jpg);
+}
+
+/*-----Barra superior de redes sociales------ */
+.top-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+  background: #ef4b3f;
+ 
+}
+
+.top-bar span{
+  color: #fff;
+}
+
+.top-bar ul{
+  list-style: none;
+  display: flex;
+}
+
+.top-bar li{
+  margin: 0px 5px;   
+}
+
+.top-bar a{
+  color: #fff;
+}
+
+.top-bar :hover{
+  color: #222;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0; 
+    background: #222;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+  }
+  
+  .navigation a:hover {
+    background: #ef4b3f;
+  }
+  
+  @media all and (max-width: 800px) {
+    .navigation {
+      justify-content: space-around;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .navigation {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .navigation a { 
+      text-align: center; 
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .navigation li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+
+/*
+Animación: generé un logo usando un div que alterna colores y usa como fondo una imagen png transparente.
+Para que el div tenga forma circular coincidente con la de la imagen, usé border radius.
+*/
+.animacion{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: #ef4b3f;
+    border-radius: 50px;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    background: url(/imagenes/logo-s.png);
+    box-shadow: 2px 2px 4px rgb(146, 146, 146);
+}
+
+@keyframes example {
+    from {background-color: rgb(252, 255, 56);}
+    to {background-color: orange}}
+    
+
+/*------Formulario---------*/
+
+.inputConfig {
+  font-size: 10pt;
+  padding: 1vw;
+  margin: 1vw;
+  border: 1px solid #cacaca;
+  box-shadow: 2px 2px 4px rgb(146, 146, 146);
+  border-radius: 10px;
+  width:98%; 
+  }
+
+form{
+  border-radius: 30px;
+  background-color: rgb(235, 235, 235);
+  padding: 3%;
+  margin: 0% 25%;
+  border: 1px solid #c2c2c2;
+  box-shadow: 2px 2px 4px rgb(146, 146, 146);
+}
+
+textarea{
+  border: 1px solid #cacaca;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  padding: 10px;
+  width:100%; 
+  height:200px;
+  font-size: 10pt;
+  box-shadow: 2px 2px 4px rgb(146, 146, 146);
+}
+
+.loginbox input[type="submit"]{
+  border: none;
+  outline:none;
+  height:50px;
+  width: 100%;
+  background:#222;
+  color: #fff;
+  font-size:20px;
+  border-radius:10px;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  box-shadow: 2px 2px 4px rgb(146, 146, 146);
+}
+
+.loginbox input[type="submit"]:hover{
+  cursor:pointer;
+  background:#ef4b3f;
+  color:rgb(255, 255, 255);
+}
+
+.active{
+color:rgb(91, 218, 87);
+background:#e02626;
+border-radius:4px;
+}
